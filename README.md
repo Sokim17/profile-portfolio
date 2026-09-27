@@ -29,15 +29,38 @@ This project is a modern portfolio for a software engineer focused on web applic
 ├── app/
 │   ├── components/
 │   │   ├── blog/
+│   │   │   ├── blog.tsx            # blog section container and post list
+│   │   │   ├── blog.css            # blog styling
+│   │   │   ├── blog.types.tsx      # blog types/interfaces
+│   │   │   └── page.tsx            # blog page entry if added later
 │   │   ├── homepage/
+│   │   │   ├── homepage.tsx        # hero and about section
+│   │   │   ├── homepage.css        # homepage styling
+│   │   │   └── homepage.types.tsx # homepage props/types
 │   │   ├── projects/
+│   │   │   ├── projects.tsx        # selected projects list
+│   │   │   ├── projects.css        # project section styling
+│   │   │   ├── projects.types.tsx  # project model/types
+│   │   │   └── page.tsx            # project page entry if needed
 │   │   ├── skills/
+│   │   │   ├── skills.tsx          # skills content block
+│   │   │   ├── skills.css          # skills styling
+│   │   │   ├── skills-lists.tsx    # skill data array
+│   │   │   └── skills.types.tsx    # skills types
 │   │   ├── trainings/
-│   │   └── work-experience/
+│   │   │   ├── trainings.tsx      # certifications/training list
+│   │   │   ├── trainings.css      # training styling
+│   │   │   └── trainings.types.tsx # training types
+│   │   ├── work-experience/
+│   │   │   ├── work-experience.tsx           # experience timeline
+│   │   │   ├── work-experience.css           # experience styling
+│   │   │   ├── work-experience-lists.tsx     # raw experience data
+│   │   │   └── work-experience.types.tsx    # experience types
+│   │   └── ...
 │   ├── globals.css
-│   ├── index.tsx
-│   ├── layout.tsx
-│   └── page.tsx
+│   ├── index.tsx                  # main page composition
+│   ├── layout.tsx                 # app layout wrapper
+│   └── page.tsx                   # home page entry
 ├── public/
 │   └── css/
 ├── scripts/
@@ -50,6 +73,16 @@ This project is a modern portfolio for a software engineer focused on web applic
 ├── README.md
 └── .gitignore
 ```
+
+### Component Responsibilities
+
+- `app/index.tsx` assembles the portfolio page and passes shared content such as title, description, and skills.
+- `app/components/homepage/homepage.tsx` renders the hero and about sections.
+- `app/components/work-experience/work-experience.tsx` renders the professional timeline.
+- `app/components/skills/skills.tsx` displays the skill categories and technologies used.
+- `app/components/trainings/trainings.tsx` lists certifications and learning resources.
+- `app/components/projects/projects.tsx` shows selected project work.
+- `app/components/blog/blog.tsx` provides a writing/journal section scaffold for future entries.
 
 ## Features
 
