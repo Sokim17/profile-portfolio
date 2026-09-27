@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sokim Nam Portfolio
 
-## Getting Started
+A personal portfolio website built with Next.js and React to showcase experience, skills, projects, certifications, and writing.
 
-First, run the development server:
+## Overview
+
+This project is a modern portfolio for a software engineer focused on web application development, API design, and enterprise systems. The site is structured as a single-page portfolio with sections for:
+
+- About / introduction
+- Skills and technology stack
+- Work experience
+- Training and certifications
+- Selected projects
+- Blog / notes placeholder
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- CSS modules / component-level styling
+- ESLint
+- Tailwind CSS
+
+## Project Structure
+
+```bash
+.
+├── app/
+│   ├── components/
+│   │   ├── blog/
+│   │   ├── homepage/
+│   │   ├── projects/
+│   │   ├── skills/
+│   │   ├── trainings/
+│   │   └── work-experience/
+│   ├── globals.css
+│   ├── index.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   └── css/
+├── scripts/
+│   └── create-component.mjs
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+├── README.md
+└── .gitignore
+```
+
+## Features
+
+- Responsive portfolio layout
+- Anchor navigation for portfolio sections
+- Reusable component structure for different content blocks
+- Project and work history data kept in typed arrays
+- Blog section scaffold ready for future posts
+- Contact link and external profile/project links
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # start development server
+npm run build    # production build
+npm run start    # run production build locally
+npm run lint     # run ESLint checks
+npm run create:component   # generate a new component scaffold
+```
 
-## Learn More
+## Production Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is ready to be deployed on platforms such as Vercel, Netlify, or any Node.js-compatible hosting provider.
 
-## Deploy on Vercel
+## Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The content is currently tailored to Sokim Nam's work history, technologies, and selected project details. The project section and blog section are structured to be easily extended as new work or articles are added.
