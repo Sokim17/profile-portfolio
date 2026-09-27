@@ -1,0 +1,134 @@
+.trainings {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 90px 0 110px;
+	border-top: 1px solid var(--line);
+	animation: homepage-reveal 700ms ease-out 520ms both;
+}
+
+.trainings__heading {
+	display: grid;
+	grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+	gap: 8vw;
+	align-items: end;
+	margin-bottom: 64px;
+}
+
+.trainings__eyebrow {
+	margin: 0 0 26px;
+	font-size: 0.72rem;
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: var(--accent);
+}
+
+.trainings h2 {
+	margin: 0;
+	font-size: clamp(2.8rem, 6vw, 6rem);
+	letter-spacing: -0.08em;
+	line-height: 0.88;
+}
+
+.trainings__intro,
+.trainings__description,
+.trainings__empty p {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: var(--muted);
+}
+
+.trainings__intro {
+	max-width: 360px;
+	margin: 0 0 8px;
+}
+
+.trainings__list {
+	border-top: 1px solid var(--line);
+}
+
+.trainings__item {
+	padding: 34px 0;
+	border-bottom: 1px solid var(--line);
+	animation: homepage-reveal 650ms ease-out both;
+}
+
+.trainings__item:nth-child(2) { animation-delay: 580ms; }
+.trainings__item:nth-child(3) { animation-delay: 640ms; }
+.trainings__item:nth-child(4) { animation-delay: 700ms; }
+
+.trainings__meta {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.trainings__provider {
+	margin: 0 0 11px;
+	font-size: 0.72rem;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--accent);
+}
+
+.trainings h3 {
+	margin: 0;
+	font-size: clamp(1.35rem, 2.4vw, 2.4rem);
+	letter-spacing: -0.05em;
+	line-height: 1;
+}
+
+.trainings__meta > span {
+	font-size: 0.72rem;
+	font-weight: 800;
+	letter-spacing: 0.08em;
+	color: var(--muted);
+}
+
+.trainings__description {
+	max-width: 600px;
+	margin: 20px 0 18px;
+}
+
+.trainings__link {
+	font-size: 0.78rem;
+	font-weight: 800;
+	color: var(--ink);
+	text-decoration: none;
+}
+
+.trainings__link:hover {
+	color: var(--accent);
+}
+
+.trainings__empty {
+	padding: 34px 0;
+	border-top: 1px solid var(--line);
+	border-bottom: 1px solid var(--line);
+}
+
+.trainings__empty p {
+	max-width: 500px;
+	margin: 20px 0 0;
+}
+
+@media (max-width: 700px) {
+	.trainings {
+		padding: 70px 0 80px;
+	}
+
+	.trainings__heading {
+		grid-template-columns: 1fr;
+		gap: 34px;
+		margin-bottom: 48px;
+	}
+
+	.trainings__meta {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 12px;
+	}
+}
