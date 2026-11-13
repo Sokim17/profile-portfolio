@@ -22,7 +22,10 @@ export default function WorkExperience({ experiences: providedExperiences }: Wor
 							<div className="work-experience__details">
 								<div className="work-experience__meta">
 									<h3>{experience.role}</h3>
-									<span>{experience.period}</span>
+									<div className="work-experience__dates">
+										<span>{experience.period}</span>
+										{experience.duration && <span className="work-experience__duration">{experience.duration}</span>}
+									</div>
 								</div>
 								<div className="work-experience__company-row">
 									<p className="work-experience__company">{experience.company}</p>

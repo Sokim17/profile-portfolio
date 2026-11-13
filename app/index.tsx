@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { HomepageProps } from './components/homepage/homepage.types'
+import type { HomepageProps } from './components/homepage/homepage.types'
+import type { SkillsProps } from './components/skills/skills.types'
 import Blog from './components/blog/blog'
 import Skills from './components/skills/skills'
 import WorkExperience from './components/work-experience/work-experience'
@@ -7,7 +8,9 @@ import Projects from './components/projects/projects'
 import Trainings from './components/trainings/trainings'
 import Homepage from './components/homepage/homepage'
 
-export default function MainPage({ title, description, aboutDescription, skills }: HomepageProps) {
+type MainPageProps = HomepageProps & SkillsProps
+
+export default function MainPage({ title, description, aboutDescription, skills }: MainPageProps) {
 	return (
 		<main className="homepage">
 			<nav className="homepage__nav" aria-label="Main navigation">
@@ -22,7 +25,7 @@ export default function MainPage({ title, description, aboutDescription, skills 
 					<a href="#blog">Blogs</a>
 				</div>
 			</nav>
-			<Homepage title={title} description={description} aboutDescription={aboutDescription} skills={skills} />
+			<Homepage title={title} description={description} aboutDescription={aboutDescription} />
 			<WorkExperience />
 			<Skills skills={skills} />
 			<Trainings />

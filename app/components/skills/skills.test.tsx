@@ -3,8 +3,9 @@ import Skills from './skills'
 
 describe('Skills', () => {
   it('renders the provided skills', () => {
-    render(<Skills skills={['React', 'Next.js', 'TypeScript']} />)
+    render(<Skills skills={[{ category: 'Languages & frameworks', skills: ['React', 'Next.js', 'TypeScript'] }]} />)
 
+    expect(screen.getByRole('heading', { name: 'Languages & frameworks' })).toBeInTheDocument()
     expect(screen.getByText('React')).toBeInTheDocument()
     expect(screen.getByText('Next.js')).toBeInTheDocument()
     expect(screen.getByText('TypeScript')).toBeInTheDocument()

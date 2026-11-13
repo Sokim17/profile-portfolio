@@ -9,4 +9,18 @@ export const projects: Project[] = [
 		category: 'Enterprise web application framework',
 		url: 'https://github.com/Sokim17/EnterpriseWebAPITemplate',
 	},
+	{
+		title: 'Animetion Movie Watchlist',
+		description: 'Built a responsive movie watchlist application that helps users discover movies and keep track of what they have watched. The app combines an Angular frontend with an Express and Node.js backend, MongoDB data storage, and JWT-based authentication.',
+		year: '2023',
+		category: 'Full-stack personal project',
+		url: 'https://github.com/Sokim17/PersonalHobbyProject-Animetion',
+	},
+	{
+		title: 'My Personal Portfolio',
+		description: 'Developed a responsive personal portfolio with Next.js, React, and TypeScript to present professional experience, technical skills, training, and selected projects.',
+		year: '2026',
+		category: 'Personal portfolio',
+		url: 'https://github.com/Sokim17/profile-portfolio',
+	},
 ]

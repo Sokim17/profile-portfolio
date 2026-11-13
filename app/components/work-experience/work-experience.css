@@ -72,7 +72,7 @@
 	line-height: 1;
 }
 
-.work-experience__meta > span,
+.work-experience__dates,
 .work-experience__company,
 .work-experience__location {
 	font-size: 0.72rem;
@@ -81,9 +81,19 @@
 	text-transform: uppercase;
 }
 
-.work-experience__meta > span {
+.work-experience__dates {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 12px;
 	white-space: nowrap;
 	color: var(--muted);
+}
+
+.work-experience__duration {
+	padding-left: 12px;
+	border-left: 1px solid var(--line);
+	color: var(--accent);
 }
 
 .work-experience__company {
@@ -162,5 +172,11 @@
 		align-items: flex-start;
 		flex-direction: column;
 		gap: 12px;
+	}
+
+	.work-experience__dates {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		white-space: normal;
 	}
 }

@@ -5,6 +5,7 @@ const experiences: WorkExperienceItem[] = [
 		company: 'EBSCO Information Services',
 		role: 'Software Engineer II',
 		period: 'Nov 2023 - Present',
+		duration: 'About 3 years',
 		location: 'United States · Remote',
 		description: [
 			'Facilitated API development using an API-first approach, improving usability by 30%, scalability by 15%, and performance by 10%, while reducing API-related incidents by 12% within six months.',
@@ -17,6 +18,7 @@ const experiences: WorkExperienceItem[] = [
 		company: 'LYHOUR PAYPRO PLC.',
 		role: 'Junior Developer (.NET)',
 		period: 'Jul 2021 - Aug 2022',
+		duration: 'About 1 year',
 		location: 'Phnom Penh, Cambodia',
 		description: [
 			'Coordinated the transformation of ASP.NET MVC web applications to ASP.NET Core using Blazor, improving employee processes across the development lifecycle.',
@@ -30,6 +32,7 @@ const experiences: WorkExperienceItem[] = [
 		company: 'LUNASA TELEMATIC & TECHNOLOGIES CO., LTD.',
 		role: 'Web Developer',
 		period: 'Mar 2019 - Jun 2021',
+		duration: 'About 2 years',
 		location: 'Phnom Penh, Cambodia',
 		description: [
 			'Spearheaded GPS-based application development with C# and ASP.NET MVC, improving the user experience by 40% through Angular, TypeScript, Bootstrap, HTML, and CSS.',

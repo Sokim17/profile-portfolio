@@ -8,7 +8,6 @@ describe('Homepage', () => {
         title="Sokim Nam"
         description="I create thoughtful digital experiences."
         aboutDescription="Software Engineer with a focus on building reliable web applications."
-        skills={['React', 'Next.js']}
       />
     )
 
@@ -23,7 +22,6 @@ describe('Homepage', () => {
         title="Sokim Nam"
         description="I create thoughtful digital experiences."
         aboutDescription="Software Engineer with a focus on building reliable web applications."
-        skills={['React', 'Next.js']}
       />
     )
 
