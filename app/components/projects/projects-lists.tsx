@@ -23,4 +23,11 @@ export const projects: Project[] = [
 		category: 'Personal portfolio',
 		url: 'https://github.com/Sokim17/profile-portfolio',
 	},
+	{
+		title: 'Habit Tracker Now',
+		description: 'Built a full-stack habit-tracking application with separate frontend and backend projects, primarily using TypeScript and CSS with Python components.',
+		year: '2026',
+		category: 'Full-stack productivity app',
+		url: 'https://github.com/Sokim17/habit-tracker-now',
+	},
 ]
